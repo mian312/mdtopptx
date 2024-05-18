@@ -8,7 +8,7 @@ def read_requirements():
         print(f"Error reading requirements.txt: {e}")
         return []
     
-with open('README.md', 'r') as f:
+with open('README.md', "r") as f:
     description = f.read()
 
 setup(
