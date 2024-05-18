@@ -14,7 +14,7 @@ with open('README.md', "r") as f:
 
 setup(
     name='mdtopptx',
-    version='0.0.4',
+    version='0.1.0',
     packages=find_namespace_packages(),
     install_requires=read_requirements(),
     description='Converts markdown files to PowerPoint presentations',
