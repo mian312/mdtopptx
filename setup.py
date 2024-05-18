@@ -10,7 +10,7 @@ def read_requirements():
 
 setup(
     name='mdtopptx',
-    version='0.0.1',
+    version='0.0.3',
     packages=find_packages(),
     install_requires=read_requirements(),
     long_description_content_type = 'text/x-rst'
