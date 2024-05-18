@@ -11,9 +11,10 @@ def read_requirements():
 
 with open('README.md', "r") as f:
     description = f.read()
+
 setup(
     name='mdtopptx',
-    version='0.0.3',
+    version='0.0.4',
     packages=find_namespace_packages(),
     install_requires=read_requirements(),
     description='Converts markdown files to PowerPoint presentations',
