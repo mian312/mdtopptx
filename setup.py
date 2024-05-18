@@ -7,11 +7,16 @@ def read_requirements():
     except Exception as e:
         print(f"Error reading requirements.txt: {e}")
         return []
+    
+with open('README.md', 'r') as f:
+    description = f.read()
 
 setup(
     name='mdtopptx',
     version='0.0.3',
     packages=find_packages(),
     install_requires=read_requirements(),
-    long_description_content_type = 'text/x-rst'
+    description='Converts markdown files to PowerPoint presentations',
+    long_description=description,
+    long_description_content_type = 'text/markdown',
 )
